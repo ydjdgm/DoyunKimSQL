@@ -32,7 +32,16 @@
             tabPageKlasse = new TabPage();
             tabPageSchueler = new TabPage();
             tabPageWorkshop = new TabPage();
+            dataGridViewKlasse = new DataGridView();
+            dataGridViewSchueler = new DataGridView();
+            dataGridViewWorkshop = new DataGridView();
             tabControlMain.SuspendLayout();
+            tabPageKlasse.SuspendLayout();
+            tabPageSchueler.SuspendLayout();
+            tabPageWorkshop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewKlasse).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewSchueler).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewWorkshop).BeginInit();
             SuspendLayout();
             // 
             // tabControlMain
@@ -48,6 +57,7 @@
             // 
             // tabPageKlasse
             // 
+            tabPageKlasse.Controls.Add(dataGridViewKlasse);
             tabPageKlasse.Location = new Point(4, 24);
             tabPageKlasse.Name = "tabPageKlasse";
             tabPageKlasse.Padding = new Padding(3);
@@ -58,6 +68,7 @@
             // 
             // tabPageSchueler
             // 
+            tabPageSchueler.Controls.Add(dataGridViewSchueler);
             tabPageSchueler.Location = new Point(4, 24);
             tabPageSchueler.Name = "tabPageSchueler";
             tabPageSchueler.Padding = new Padding(3);
@@ -68,6 +79,7 @@
             // 
             // tabPageWorkshop
             // 
+            tabPageWorkshop.Controls.Add(dataGridViewWorkshop);
             tabPageWorkshop.Location = new Point(4, 24);
             tabPageWorkshop.Name = "tabPageWorkshop";
             tabPageWorkshop.Padding = new Padding(3);
@@ -75,6 +87,30 @@
             tabPageWorkshop.TabIndex = 2;
             tabPageWorkshop.Text = "Workshop";
             tabPageWorkshop.UseVisualStyleBackColor = true;
+            // 
+            // dataGridViewKlasse
+            // 
+            dataGridViewKlasse.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewKlasse.Location = new Point(6, 6);
+            dataGridViewKlasse.Name = "dataGridViewKlasse";
+            dataGridViewKlasse.Size = new Size(595, 671);
+            dataGridViewKlasse.TabIndex = 0;
+            // 
+            // dataGridViewSchueler
+            // 
+            dataGridViewSchueler.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewSchueler.Location = new Point(6, 6);
+            dataGridViewSchueler.Name = "dataGridViewSchueler";
+            dataGridViewSchueler.Size = new Size(595, 671);
+            dataGridViewSchueler.TabIndex = 1;
+            // 
+            // dataGridViewWorkshop
+            // 
+            dataGridViewWorkshop.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewWorkshop.Location = new Point(6, 6);
+            dataGridViewWorkshop.Name = "dataGridViewWorkshop";
+            dataGridViewWorkshop.Size = new Size(595, 671);
+            dataGridViewWorkshop.TabIndex = 1;
             // 
             // Form1
             // 
@@ -85,6 +121,12 @@
             Name = "Form1";
             Text = "Form1";
             tabControlMain.ResumeLayout(false);
+            tabPageKlasse.ResumeLayout(false);
+            tabPageSchueler.ResumeLayout(false);
+            tabPageWorkshop.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridViewKlasse).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewSchueler).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewWorkshop).EndInit();
             ResumeLayout(false);
         }
 
@@ -94,5 +136,8 @@
         private TabPage tabPageKlasse;
         private TabPage tabPageSchueler;
         private TabPage tabPageWorkshop;
+        private DataGridView dataGridViewKlasse;
+        private DataGridView dataGridViewSchueler;
+        private DataGridView dataGridViewWorkshop;
     }
 }

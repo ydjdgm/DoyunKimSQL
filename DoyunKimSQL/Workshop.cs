@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DoyunKimSQL
 {
-    internal class Workshop
+    public class Workshop
     {
         public int WorkshopID { get; set; }
         public int Nr { get; set; }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DoyunKimSQL
 {
-    internal interface IView
+    public interface IView
     {
         IModel Model { get; set; }
         IController Controller { get; set; }

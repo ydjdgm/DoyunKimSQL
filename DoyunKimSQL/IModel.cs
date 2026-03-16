@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace DoyunKimSQL
 {
-    internal interface IModel
+    public interface IModel
     {
         IView View { get; set; }
         IController Controller { get; set; }
+        public List<Klasse> GetKlasse();
+        public List<Schueler> GetSchueler();
+        public List<Workshop> GetWorkshop();
     }
 }
