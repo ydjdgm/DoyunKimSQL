@@ -2,18 +2,6 @@ DROP DATABASE projektwoche2026;
 CREATE DATABASE projektwoche2026;
 use projektwoche2026
 
-CREATE TABLE workshop(
-    workshopID INT AUTO_INCREMENT PRIMARY KEY,
-    nr INT,
-    titel VARCHAR(50),
-    kosten INT,
-    beschreibung VARCHAR(100),
-    voraussetzungen VARCHAR(100),
-    teilnehmerMin INT,
-    teilnehmerMax INT,
-    schwerpunkt VARCHAR(100)
-);
-
 CREATE TABLE klasse (
     klasseID INT PRIMARY KEY,
     bezeichnung VARCHAR(100)
