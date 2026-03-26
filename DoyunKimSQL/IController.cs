@@ -13,5 +13,6 @@ namespace DoyunKimSQL
         List<Klasse> LadenKlasse();
         List<Schueler> LadenSchueler();
         List<Workshop> LadenWorkshop();
+        void AendernKlasse(List<Klasse> klassen);
     }
 }

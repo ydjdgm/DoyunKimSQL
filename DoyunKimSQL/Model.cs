@@ -108,5 +108,23 @@ namespace DoyunKimSQL
 
 
         }
+        public void AendernKlasse(List<Klasse> klassen)
+        {
+            try
+            {
+                conn.Open();
+                foreach (Klasse klasse in klassen)
+                {
+                    mycommand.CommandText = $"UPDATE klasse SET bezeichnung='{klasse.Bezeichnung}' WHERE klasseID={klasse.KlasseID};";
+                    mycommand.ExecuteNonQuery();
+                }
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                conn.Close();
+                Console.WriteLine(ex.Message);
+            }
+        }
     }
 }

@@ -23,5 +23,9 @@ namespace DoyunKimSQL
         {
             return Model.GetWorkshop();
         }
+        public void AendernKlasse(List<Klasse> klassen)
+        {
+            Model.AendernKlasse(klassen);
+        }
     }
 }
